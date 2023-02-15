@@ -2,9 +2,11 @@ body{
     background-color: rgb(216, 255, 242);
     display: flex;
     font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box;
-    padding-left: 100px;
-    
+
+    border-width: 2px;
+    width: 400px;
+    margin:auto
+
 
     
 }
