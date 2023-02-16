@@ -1,0 +1,62 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+ul, ol, dd{margin:0; padding:0;}
+
+/* 
+    Mobile phone settings -- < 320px 
+    Defaults
+*/
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+li, nav li a, nav li a:visited {
+    width:100%;
+    display: inline-block;
+    background-color: #1D2B41;
+    color: #BFC1CC; /*text content*/
+    text-decoration: none;
+    text-align: center;
+    
+    padding:2em;
+    
+}
+
+li{
+    border: inset #7AAADD 2px;
+    margin-bottom: 1.5em;
+}
+
+/* Tablet size */
+@media all and (min-width:768px){
+    ul{
+        flex-direction: row;
+    }
+
+}
+
+/* Desktop size */
+@media all and (min-width:1200px){
+   ul{
+    justify-content: center;
+   }
+   nav li a, nav li a:visited
+    {
+        display: inline;
+        background-color: inherit;
+        color: #1D2B41;
+    }
+    li{
+        background-color: inherit;
+        border: none;
+    }
+
+}
