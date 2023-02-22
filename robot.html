@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            main{
+                padding:10%;
+                background-color: black;
+                height: 100vh;
+                width:100vw;
+            }
+
+            .robot{
+                
+                position: relative;
+            }
+            .robot_head{
+                background-color: grey;
+                position: relative;
+                width:10vw;
+                height:10vw;
+                border-radius: 54% 46% 35% 65% / 100% 100% 0% 0% ;
+            }
+            .robot_antenna{
+                position: absolute;
+                background-color:aqua;
+                width:1vw;
+                height:3vw;
+                top:-3vw;
+                left:5vw;
+            }
+            .robot_face{
+                position: absolute;
+                top:3vw;
+                left:2.5vw;
+                width:50%;
+                height:50%;
+                background-color: lightslategray;
+            }
+
+            .robot_eyes{
+                display: flex;
+                flex-direction: row;
+            }
+
+            .robot_eyes>div{
+                background-color: white;
+                margin:1vw;
+                border-radius: 50%;
+                width:.5vw;
+                height:.5vw;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+
+            <div class="robot" id="robot1">
+                <div class="robot robot_head">
+                    <div class="robot robot_antenna"></div>
+                    <div class="robot robot_face">
+                        <div class="robot robot_eyes">
+                            <div class="robot robot_right_eye"></div>
+                            <div class="robot robot_left_eye"></div>
+                        </div>
+                        <div class="robot robot_mouth"></div>
+                    </div>
+                </div>
+                <div class="robot robot_body"></div>
+                <div class="robot robot_legs"></div>
+            </div>
+            
+
+
+        </main>
+    </body>
+
+</html>
