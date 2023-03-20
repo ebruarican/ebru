@@ -25,13 +25,31 @@
             background-color: rgb(212, 212, 240);
 
         }
+
+        breadcrumb {
+            display: inline-flex;
+          
+        
+        }
+
+        .breadcrumb li:after {
+           content: '/';
+           margin-left: 20px;
+        
+        }
+
+        
+    
+
+    
+        
     </style>
 
 </head>
 
 <body>
     <aside>
-        <ul>
+        <ul class="breadcrumb">
             <li class="one">Lorem ipsum dolor sit amet.</li>
             <li class="two">Lorem ipsum dolor sit amet.</li>
             <li class="three">Lorem ipsum dolor sit amet.</li>
