@@ -1,5 +1,5 @@
-var mymessage= "";
-var city= window.prompt('What is the name of  your city?', "");
+let mymessage= "",
+let city= window.prompt('What is the name of  your city?', "");
 if ( ( city==="")||(city===null )){
     mymessage="no city entered";}
 else{   
