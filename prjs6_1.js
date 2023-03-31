@@ -1,7 +1,7 @@
-var mymessage=""
-var city= window.prompt('What is the name of  your city?'),
-if ( city=="",'null' ){
-    mymessage="no city entered"}
+var mymessage="",
+var city= window.prompt('What is the name of  your city?', "");
+if ( ( city==="")||(city===null )){
+    mymessage="no city entered";}
 switch (city){
     case "jhonstown":
         window.alert("We can have items delivered to you in 3 days.")
