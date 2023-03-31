@@ -18,4 +18,4 @@ switch (city){
            
 }
 }
-document.write(msg);s
+document.write(msg);
