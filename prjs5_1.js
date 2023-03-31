@@ -1,4 +1,4 @@
-let paycheck= 2000
+let paycheck= 2000;
 document.write("paycheck"+"<br>");
 paycheck += 2000;
 document.write("paycheck"+"<br>");
