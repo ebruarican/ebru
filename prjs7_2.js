@@ -13,10 +13,12 @@ let computer_parts=[["Monitors", "LCD Screens", "Vibrant Colors"],
         }
         else if(j===computer_parts[i].length -1);{
             document.write(computer_parts[i][j]+"br");
-        } else{
+        }
+            else
+         {
             document.write(computer_parts[i][j]+",")
 
         }
         
     }   
-    }
+}
