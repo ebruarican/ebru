@@ -2,7 +2,19 @@
 <html lang="en">
 
 <head>
+    
+</head>
+
+<body>
     <style>
+        .eightball {
+            padding: 30px;
+            width: 250px;
+            height: 250px;
+            background-color: black;
+            position: relative;
+            border-radius: 50%;
+        }
         .corner {
 
             position: absolute;
@@ -15,11 +27,38 @@
             border-right: 150px solid transparent;
 
         }
+        .corner span {
+            position:absolute;
+            top: -100px;
+            width: 100px;
+            left: 5px;
+            text-align: center;
+            font-size: 16px;
+            font-family: Arial;
+            transform: rotate(-45deg);
+            display: block;
+            color: white;
+        }
+        .shake {
+            animation-name: shake;
+            animation-iteration-count: 32;
+            animation-duration: 20ms;
+        }
+        @keyframes shake {
+            0%{top: 100px;left:10px;}
+            20%{top: 50px;left:0px;}
+            75%{top: 50px;left:10px;}
+            100%{top:-10px;left:-10px}
+            
+        }
     </style>
-
-</head>
-
-<body>
+    <script>
+        var fortunes=[
+            "Try again.",
+            "Yes!",
+            
+        ]
+    </script>
 
 </body>
 
