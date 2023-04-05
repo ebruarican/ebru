@@ -56,9 +56,35 @@
         var fortunes=[
             "Try again.",
             "Yes!",
+            "Always!",
+            "Definitely",
+            "fo sho",
+            "No."
             
-        ]
+        ];
+        var curFortune=0;
+        function shake(){
+            var magicBall = document.querySelector(".eightball");
+            console.log(magicBall);
+            magicBall.classList.remove("shake");
+            void magicBall.offsetWidth;
+            magicBall.classList.add("shake");
+            void magicBall.offsetWidth;
+
+            curFortune=Math.floor(Math.random()*fortunes.length);
+            setTimeout(()=>{
+                var element = document.getElementById("fortune");
+                element.childNodes[0].nodeValue= fortunes[curfortune];},500);
+
+            }
+
+
+    
     </script>
+    <button onclick="shake()">Shake</button>
+    <div class="eightball">
+        <div class="corner"><span id="fortune">Guess again</span></div>
+    </div>
 
 </body>
 
