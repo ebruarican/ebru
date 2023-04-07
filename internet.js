@@ -1,6 +1,2 @@
-var yas= x;
-if(x<18){
-    console.log{'ehliyet alamaz'};
-}else{
-    console.log('ehliyet alabilir');
-}
+for(var i=10; i<=100; i++){
+console.log(i)}
