@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        label{
+            display: block;
+        }
+        </style>
+</head>
+<body>
+    <form>
+        <script>
+            //define function
+            function makeEmail(){
+            //get values from form
+            var firstName = document.getElementById("firstName").value,
+                lastName = document.getElementById("lastName").value;
+            //get first letter from first name
+            var firstLetter = firstName.charAt(0);
+            //add strings together with email address
+            var email = firstLetter + "." + lastName + "@waketech.edu";
+            //alert new email address
+            alert(email);
+            }
+
+            function validateForm(){
+                //get values from form
+                var firstName = document.getElementById("firstName").value,
+                    lastName = document.getElementById("lastName").value,
+                    bIsValid = true;
+                // Check for:
+                // maximum length
+                // somestring.length 
+                // minimum length
+                if( bIsValid && (firstName !="") && (lastName != "" ) 
+                    && (lastName.length < 12) )
+                {
+                    bIsValid = true;
+                }
+                else{
+                    bIsValid = false;
+                    alert("Invalid First or Last Name");
+                }
+
+                // non-letters
+                // check for duplicate email
+                
+
+                if(bIsValid)
+                {
+                    makeEmail();
+                }
+
+            }
+
+            /*function makeBananas(){
+                var myString = ("b" + "a" + + "a" + "a").toLowerCase();
+                alert(myString);
+            }*/
+
+            // Increment
+            var myNum = 0;
+            var myOther = ++myNum;// both are one
+            var myThird = myNum++;// myThird =1, myNum 2
+
+            function spellName()
+            {
+                var firstName = document.getElementById("firstName").value,
+                    lastName = document.getElementById("lastName").value;
+
+                    for(var count = 0; count < firstName.length; count++)
+                    {
+                        alert( firstName.charAt(count));
+                    }
+                    var count = 0;
+                    while(count < lastName.length )
+                    {
+                        alert( lastName.charAt(count++));
+                    }
+            }
+
+        </script>
+        <label for="firstName">First Name</label><input id="firstName">
+        
+        <label for="lastName">Last Name</label><input id="lastName">
+        <button onclick="validateForm()">Make Email</button>
+        <button onClick="spellName()">Spell Name</button>
+
+        <!--<button onClick="makeBananas()">Make Banana</button>-->
+    </form>
+</body>
+</html>
